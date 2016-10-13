@@ -25,7 +25,8 @@ public class Robot extends IterativeRobot {
         while(isOperatorControl() && isEnabled()) {
             //http://team358.org/files/programming/ControlSystem2015-2019/images/XBoxControlMapping.jpg
             steering.setAngle((joystick.getRawAxis(0) + 1) / 2);
-            drive.drive(,0);
+            double movement = joystick.getRawAxis(3) - joystick.getRawAxis(2);
+            drive.drive(movement, 0);
             Timer.delay(0.005);
         }
     }
