@@ -8,13 +8,12 @@ import edu.wpi.first.wpilibj.*;
  *
  *         Creation date: 10/13/16
  */
-public class Robot extends IterativeRobot {
+public class Robot extends SampleRobot {
 
     //Defines the variables as members of our Robot class
     RobotDrive drive; //pins 0,1,2,3
     Joystick joystick;
     Servo steering; //channel 4
-    int autoLoopCounter;
 
     //Initializes the variables in the robotInit method, this method is called when the robot is initializing
     public void robotInit() {
