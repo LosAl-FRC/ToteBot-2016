@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.*;
 /**
  * @author Ktar5 (Carter Gale)
  * @author RolyPoly (Will Dang)
+ * @author alew2161 (Alexander Lew)
  *
  *         Creation date: 10/13/16
  */
