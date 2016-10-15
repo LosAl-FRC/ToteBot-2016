@@ -16,7 +16,7 @@ public class Robot extends SampleRobot {
     Joystick joystick;
     Servo steering; //channel 4
 
-    //Initializes the variables in the robotInit method, this method is called when the robot is initializing
+    //Initializes the variables in the robotInit method, this method is called when the robot is initializing.
     public void robotInit() {
         this.drive = new RobotDrive(0, 1, 2, 3);
         this.joystick = new Joystick(1);
