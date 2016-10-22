@@ -1,4 +1,4 @@
-package org.ucfirst.frc.team6220;
+package org.usfirst.frc.team6220;
 
 import edu.wpi.first.wpilibj.*;
 
