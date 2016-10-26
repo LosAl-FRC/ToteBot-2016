@@ -30,6 +30,12 @@ public class Robot extends SampleRobot {
         while (isOperatorControl() && isEnabled()) {
             //http://team358.org/files/programming/ControlSystem2015-2019/images/XBoxControlMapping.jpg
             double angle = (joystick.getRawAxis(0) + 1) / 2;
+            if(angle > .48 && angle < .51){
+                angle = .5;
+            }
+            angle *= 180;
+            //Fun things v
+            //angle = Math.pow(angle, joystick.getRawAxis(3) - joystick.getRawAxis(2));
             steering.setAngle(angle);
             double movement = joystick.getRawAxis(3) - joystick.getRawAxis(2);
             drive.drive(movement, 0);
