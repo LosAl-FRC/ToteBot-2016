@@ -29,13 +29,14 @@ public class Robot extends SampleRobot {
         int i = 0;
         while (isOperatorControl() && isEnabled()) {
             //http://team358.org/files/programming/ControlSystem2015-2019/images/XBoxControlMapping.jpg
-            steering.setAngle((joystick.getRawAxis(0) + 1) / 2);
+            double angle = (joystick.getRawAxis(0) + 1) / 2;
+            steering.setAngle(angle);
             double movement = joystick.getRawAxis(3) - joystick.getRawAxis(2);
             drive.drive(movement, 0);
             Timer.delay(0.005);
             if(i % 50 == 0){
                 i = 0;
-                //System.out.println("Movement: " + movement + "\nAngle: " + angle + "\n");
+                System.out.println("Movement: " + movement + "\nAngle: " + angle + "\n");
             }
             i++;
         }
