@@ -18,8 +18,9 @@ public class Robot extends SampleRobot {
 
     //Initializes the variables in the robotInit method, this method is called when the robot is initializing.
     public void robotInit() {
+        System.out.println("Robot has started");
         this.drive = new RobotDrive(0, 1, 2, 3);
-        this.joystick = new Joystick(1);
+        this.joystick = new Joystick(0);
         this.steering = new Servo(4);
     }
 
