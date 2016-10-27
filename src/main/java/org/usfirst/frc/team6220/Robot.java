@@ -40,12 +40,12 @@ public class Robot extends SampleRobot {
             drive.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);
             drive.setInvertedMotor(RobotDrive.MotorType.kFrontRight, true);
             */
-            Timer.delay(0.01);
             if(i % 50 == 0){
                 i = 0;
-                System.out.println("Movement: " + movement + "\nAngle: " + angle + "\n");
+                System.out.println("Movement: " + movement + " | Angle: " + angle + "");
             }
             i++;
+            Timer.delay(0.01);
         }
     }
 
